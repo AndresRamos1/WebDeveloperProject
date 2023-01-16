@@ -1,0 +1,78 @@
+.logo {
+    width: 3rem;
+}
+
+.nav {
+    font-weight: 700;
+    
+    li:hover {
+        border: solid 1px black;
+    }
+}
+
+main {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation-name: fadeIn;
+    animation-duration: 3000ms;
+    
+    h1 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+
+    p {
+        margin: 0 20% 0 20%;
+        font-size: 24px;
+        text-align: justify;
+    }
+}
+
+header{
+    .dropdown {
+        display: none;
+    }
+}
+
+$breakpoints: (
+    sm: 540px,
+    md: 768px,
+    lg: 1024px,
+);
+
+@mixin media-up($breakpoint){
+    @media screen and (max-width: map-get($breakpoints, $breakpoint)){
+        @content;
+    }
+}
+
+@include media-up(sm){
+    #menu {
+        display: none;
+    }
+    header {
+        .dropdown {
+            display: flex;
+        }
+    }
+    .col-md-3 {
+        display: none;
+    }
+    main>p {
+        margin: 0 5% 0 5%;
+        font-size: 16px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 2;
+    }
+}
