@@ -1,11 +1,13 @@
-.logo {
+header .dropdown {
+  display: none;
+}
+header .logo {
   width: 3rem;
 }
-
-.nav {
+header .nav {
   font-weight: 700;
 }
-.nav li:hover {
+header .nav li:hover {
   border: solid 1px black;
 }
 
@@ -31,11 +33,7 @@ main p {
   text-align: justify;
 }
 
-header .dropdown {
-  display: none;
-}
-
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 768px) {
   #menu {
     display: none;
   }

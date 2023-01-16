@@ -1,9 +1,14 @@
-.logo {
+header .logo {
   width: 3rem;
 }
-
-.nav {
+header .dropdown {
+  display: none;
+}
+header .nav {
   font-weight: 700;
+}
+header .nav li:hover {
+  border: solid 1px black;
 }
 
 main {
@@ -17,24 +22,30 @@ main {
   -webkit-animation-duration: 3000ms;
           animation-duration: 3000ms;
 }
-
-.container-main {
+main .title-main {
+  height: 20%;
+}
+main .container-main {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   height: 100%;
 }
-
-.container-main > ul {
+main .container-main ul {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 40vw;
 }
-
-.container-text > p {
+main .container-text {
+  width: 40vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+main .container-text p {
   display: flex;
   text-align: justify;
   align-items: center;
@@ -42,39 +53,20 @@ main {
   height: 100%;
 }
 
-.container-text {
-  width: 40vw;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.title-main {
-  height: 20%;
-}
-
-.dropdown {
-  display: none;
-}
-
-.nav > li:hover {
-  border: solid 1px black;
-}
-
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   main {
     height: 85vh;
   }
   #menu {
     display: none;
   }
-  .dropdown {
+  header .dropdown {
     display: flex;
   }
   .col-md-3 {
     display: none;
   }
-  .container-text > p {
+  main .container-text > p {
     font-size: 16px;
   }
 }

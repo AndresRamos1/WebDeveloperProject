@@ -1,12 +1,16 @@
-.logo {
-    width: 3rem;
-}
-
-.nav {
-    font-weight: 700;
-    
-    li:hover {
-        border: solid 1px black;
+header{
+    .dropdown {
+        display: none;
+    }
+    .logo {
+        width: 3rem;
+    }
+    .nav {
+        font-weight: 700;
+        
+        li:hover {
+            border: solid 1px black;
+        }
     }
 }
 
@@ -32,12 +36,6 @@ main {
     }
 }
 
-header{
-    .dropdown {
-        display: none;
-    }
-}
-
 $breakpoints: (
     sm: 540px,
     md: 768px,
@@ -50,7 +48,7 @@ $breakpoints: (
     }
 }
 
-@include media-up(sm){
+@include media-up(md){
     #menu {
         display: none;
     }
