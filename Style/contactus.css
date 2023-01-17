@@ -1,0 +1,87 @@
+header .logo {
+  width: 3rem;
+}
+header .dropdown {
+  display: none;
+}
+header .nav {
+  font-weight: 700;
+}
+header .nav li:hover {
+  border: solid 1px black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+main .title-main {
+  margin-bottom: 5%;
+}
+main .form1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 2rem;
+  width: 50%;
+  height: 100%;
+}
+main input {
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 0.5rem;
+}
+main textarea {
+  height: 30%;
+  border: 1px solid black;
+}
+main button {
+  width: 6rem;
+  border: 1px solid black;
+  background-color: transparent;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 850px) {
+  main {
+    height: 80vh;
+    width: 100vw;
+  }
+  input {
+    width: 100%;
+  }
+  #menu {
+    display: none;
+  }
+  header .dropdown {
+    display: flex;
+  }
+  .col-md-3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 540px) {
+  .form1 {
+    width: 90%;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 2;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 2;
+  }
+}/*# sourceMappingURL=contactus.css.map */
